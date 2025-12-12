@@ -38,11 +38,8 @@ The result is displayed instantly in a Java popup — creating a smooth desktop 
 ## Architecture Diagram (ASCII)
 
 ```
-+------------------+        HTTP POST         +---------------------------+
-|  Java Swing GUI  | ---------------------->  |   Python Flask Backend    |
-| (HousePriceGUI)  |                          |   (ML Model Inference)    |
-+------------------+ <----------------------  +---------------------------+
-        Input UI           JSON Response              Scikit-learn
+![GUI Screenshot](screenshots/Architecture Diagram - Java Swing to Flask ML.png)
+
 ```
 
 
@@ -159,6 +156,7 @@ Make sure the Python backend is running first.
 ## License
 
 This project is provided for **educational and demonstration purposes**.
+
 
 
 
