@@ -1,55 +1,158 @@
-# House Price Prediction Project
+# 🏡 House Price Prediction System (Java GUI + Python ML Backend)
 
-This repository contains both **Python** and **Java** implementations for a house price prediction system.  
-It demonstrates a complete workflow involving machine learning model training, API-based prediction, and a Java Swing desktop interface.
-
----
-
-## Project Structure
-
-- **python_app/**  
-  Contains the Python backend built with Flask and a trained Scikit-learn model (Pickle).  
-  This service exposes an API endpoint for predicting house prices.
-
-- **java_app/**  
-  Contains the Java Swing GUI application.  
-  The Java frontend sends input data to the Python API and displays the predicted output.
-
-- **.gitignore**  
-  Root-level ignore file for excluding temporary/system-specific files.
+A full-stack **cross-language machine learning application** that connects a **Java Swing desktop GUI** with a **Python Flask backend** for real-time house price prediction.  
+The system demonstrates practical integration between a typed, compiled language (Java) and a dynamic ML environment (Python), making it an industry-style project.
 
 ---
 
-## How to Use
+## 🚀 Project Overview
 
-Each component has its own setup and usage instructions:
+This application enables users to enter house attributes (area, bedrooms, bathrooms, stories) through a **Java Swing interface**.  
+These features are sent via an **HTTP POST request** to a **Python Flask API**, which loads a trained **Scikit-learn regression model** and returns the predicted house price.
 
-- For the **Python ML API**, see:  
-  `python_app/README.md`
-
-- For the **Java GUI application**, see:  
-  `java_app/README.md`
+The result is displayed instantly in a Java popup — creating a smooth desktop ML experience.
 
 ---
 
-## Requirements
+## 🧠 Features
 
-- **Python 3.x**  
-  Install dependencies listed in `python_app/requirements.txt`
+### ✔ Java Swing GUI  
+- Clean, simple user interface  
+- Input validation for numerical fields  
+- “Predict” button triggers ML inference  
+- Instant popup with predicted house price  
 
-- **Java JDK 8+**  
-  Required to compile and run the Swing-based UI
+### ✔ Python Machine Learning Backend  
+- Trained regression model (10,000+ samples)  
+- Preprocessing + model serialization (Pickle)  
+- Fast inference with Scikit-learn  
+- Flask API endpoint `/predict` for real-time predictions  
+
+### ✔ Cross-Language Integration  
+- Java → sends JSON payload  
+- Python → returns JSON response  
+- Decoupled architecture (GUI and ML are independent)  
 
 ---
 
-## Summary
+## 🧩 Architecture Diagram (ASCII)
 
-This project showcases:
+\`\`\`
++------------------+        HTTP POST         +---------------------------+
+|  Java Swing GUI  | ---------------------->  |   Python Flask Backend    |
+| (HousePriceGUI)  |                          |   (ML Model Inference)    |
++------------------+ <----------------------  +---------------------------+
+        Input UI           JSON Response              Scikit-learn
+\`\`\`
 
-- Machine learning model deployment using Python  
-- Java ↔ Python cross-language communication  
-- Real-time prediction via REST API  
-- A modular structure separating UI, ML logic, and API services  
+---
+## 📂 Folder Structure
+
+\`\`\`
+House_Price_GUI_application/
+│
+├── python_app/            # Flask ML backend
+│   ├── app.py
+│   ├── model/house_model.pkl
+│   ├── data/housing_dataset.csv
+│   └── README.md
+│
+├── java_app/              # Java Swing UI
+│   ├── src/HousePriceGUI.java
+│   └── README.md
+│
+├── screenshots/           # GUI or backend images (optional)
+│
+└── README.md              # Root documentation (this file)
+\`\`\`
+
 
 ---
 
+## 🛠️ Tech Stack
+
+### **Frontend (GUI)**
+- Java  
+- Swing  
+- Java HTTP Client  
+
+### **Backend (ML Service)**
+- Python  
+- Flask  
+- Scikit-learn  
+- Pickle for model serialization  
+
+### **Data**
+- 10,000+ rows real-estate dataset  
+- Preprocessed + trained regression model  
+
+---
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Start the Python Backend
+\`\`\`bash
+cd python_app
+pip install -r requirements.txt
+python app.py
+\`\`\`
+
+Backend runs at:  
+http://127.0.0.1:5000/predict
+
+
+---
+
+## 2️⃣ Run the Java GUI
+
+\`\`\`bash
+cd java_app
+javac src/HousePriceGUI.java
+java -cp src HousePriceGUI
+\`\`\`
+
+Make sure the Python backend is running first.
+
+---
+
+## 🧪 Example Prediction Workflow
+
+### Java sends:
+\`\`\`json
+{
+  "area": 2500,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "stories": 2
+}
+\`\`\`
+
+### Python responds:
+\`\`\`json
+{
+  "predicted_price": 7431415.18
+}
+\`\`\`
+## 📸 Screenshots
+
+(Add images inside `/screenshots` folder, then link them here)
+
+\`\`\`
+![GUI Screenshot](screenshots/gui.png)
+\`\`\`
+
+---
+
+## 🎯 Why This Project Stands Out
+
+- Real full-stack engineering  
+- Combines **ML + API development + desktop GUI development**  
+- Uses two different languages communicating over HTTP  
+- Clean architecture demonstrating professional engineering practice  
+- Excellent résumé and internship portfolio project  
+
+---
+
+## 📜 License
+
+This project is provided for **educational and demonstration purposes**.
