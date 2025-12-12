@@ -23,8 +23,10 @@ This demonstrates a real-world **cross-language integration workflow** between J
 ## How to Run the Java GUI
 
 ### Compile the Java source code
-```bash
+\`\`\`bash
 javac src/HousePriceGUI.java
+\`\`\`
+
 ### Run the GUI application
 \`\`\`bash
 java -cp src HousePriceGUI
@@ -87,3 +89,4 @@ The predicted price is then shown in a **Swing popup dialog**.
 ## License
 
 This project is intended for **educational and demonstration purposes**.
+
