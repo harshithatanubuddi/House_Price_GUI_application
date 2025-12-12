@@ -133,10 +133,10 @@ Make sure the Python backend is running first.
 ## Screenshots
 
 (Add images inside `/screenshots` folder, then link them here)
-
 \`\`\`
 ![GUI Screenshot](screenshots/House_price_details.png)
-![GUI Screenshot](screenshots/House_price_details.png)
+
+![GUI Screenshot](screenshots/prediction.png)
 \`\`\`
 
 ---
@@ -154,4 +154,5 @@ Make sure the Python backend is running first.
 ## License
 
 This project is provided for **educational and demonstration purposes**.
+
 
