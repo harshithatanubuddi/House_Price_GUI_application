@@ -35,7 +35,7 @@ The result is displayed instantly in a Java popup — creating a smooth desktop 
 
 ---
 
-## 🧩 Architecture Diagram
+## Architecture Diagram
 
 <p align="center">
   <img src="screenshots/Architecture Diagram - Java Swing to Flask ML.png" width="700">
@@ -155,6 +155,7 @@ Make sure the Python backend is running first.
 ## License
 
 This project is provided for **educational and demonstration purposes**.
+
 
 
 
