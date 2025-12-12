@@ -37,18 +37,19 @@ The result is displayed instantly in a Java popup — creating a smooth desktop 
 
 ## Architecture Diagram (ASCII)
 
-\`\`\`
+```
 +------------------+        HTTP POST         +---------------------------+
 |  Java Swing GUI  | ---------------------->  |   Python Flask Backend    |
 | (HousePriceGUI)  |                          |   (ML Model Inference)    |
 +------------------+ <----------------------  +---------------------------+
         Input UI           JSON Response              Scikit-learn
-\`\`\`
+```
+
 
 ---
 ## Folder Structure
 
-\`\`\`
+```
 House_Price_GUI_application/
 │
 ├── python_app/            # Flask ML backend
@@ -64,7 +65,7 @@ House_Price_GUI_application/
 ├── screenshots/           # GUI or backend images (optional)
 │
 └── README.md              # Root documentation (this file)
-\`\`\`
+```
 
 
 ---
@@ -91,6 +92,7 @@ House_Price_GUI_application/
 ## How to Run the Project
 
 ### 1. Start the Python Backend
+
 \`\`\`bash
 cd python_app
 pip install -r requirements.txt
@@ -99,6 +101,7 @@ python app.py
 
 Backend runs at:  
 http://127.0.0.1:5000/predict
+
 
 ### 2. Run the Java GUI
 
@@ -130,14 +133,16 @@ Make sure the Python backend is running first.
   "predicted_price": 7431415.18
 }
 \`\`\`
+
+---
+
 ## Screenshots
 
-(Add images inside `/screenshots` folder, then link them here)
-\`\`\`
+```
 ![GUI Screenshot](screenshots/House_price_details.png)
 
 ![GUI Screenshot](screenshots/prediction.png)
-\`\`\`
+```
 
 ---
 
@@ -154,5 +159,6 @@ Make sure the Python backend is running first.
 ## License
 
 This project is provided for **educational and demonstration purposes**.
+
 
 
