@@ -35,12 +35,12 @@ The result is displayed instantly in a Java popup — creating a smooth desktop 
 
 ---
 
-## Architecture Diagram (ASCII)
+## 🧩 Architecture Diagram
 
-```
-![GUI Screenshot](screenshots/Architecture Diagram - Java Swing to Flask ML.png)
+<p align="center">
+  <img src="screenshots/architecture.png" width="700">
+</p>
 
-```
 
 
 ---
@@ -140,6 +140,10 @@ Make sure the Python backend is running first.
 
 ![GUI Screenshot](screenshots/prediction.png)
 ```
+<p align="center">
+  <img src="screenshots/House_price_details.png" width="700"><br><br>
+  <img src="screenshots/prediction.png" width="700"><br><br>
+</p>
 
 ---
 
@@ -156,6 +160,7 @@ Make sure the Python backend is running first.
 ## License
 
 This project is provided for **educational and demonstration purposes**.
+
 
 
 
